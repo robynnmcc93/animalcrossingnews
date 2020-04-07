@@ -5,15 +5,12 @@
 
 
 {% if latest_heading_list %}
-    {% for story in heading.story_set.all %}
-    {{ story.story_text }}
-{% endfor %}
     {% for heading in latest_heading_list %}
-        <a><b></b><font size="+2"> {{ heading.heading_text }}{{story.story_text}}</font><br>{{heading.pub_date}}</a></b><br><br>
+        <a><b></b><font size="+2"> {{ heading.heading_text }}<br>{{story.story_text}}</font><br>{{heading.pub_date}}</a></b><br><br>
     {% endfor %}
 {% else %}
     <p>Slow news day!</p>
 {% endif %}
 
 
-
+<p> Please look in admin page for the full scoop on each story :)</p>
