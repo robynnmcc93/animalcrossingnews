@@ -9,9 +9,10 @@ class Heading(models.Model):
     def __str__(self):
         return self.heading_text
 
-class TheStory(models.Model):
+
+class Story(models.Model):
     heading = models.ForeignKey(Heading, on_delete=models.CASCADE)
-    thestory_text = models.CharField(max_length=500)
+    story_text = models.CharField(max_length=500)
 
     def __str__(self):
-        return self.thestory_text
+        return self.story_text
