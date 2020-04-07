@@ -1,0 +1,12 @@
+<font size="+10"<h>Animal Crossing News!</h></font>
+
+<br>
+<br>
+
+{% if latest_heading_list %}
+    {% for heading in latest_heading_list %}
+        <a><b></b><font size="+2"> {{ heading.heading_text }}</font><br>{{heading.pub_date}}</a></b><br><br>
+    {% endfor %}
+{% else %}
+    <p>Slow news day!</p>
+{% endif %}
