@@ -3,7 +3,7 @@
 SuperUser details:
 
 username: admin
-superuser: tomnookhatesyou
+password: tomnookhatesyou
 
 http://robynnmcc.pythonanywhere.com/animalcrossingnews/
 http://robynnmcc.pythonanywhere.com/admin
